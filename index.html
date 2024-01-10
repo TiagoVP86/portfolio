@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      href="style.css"
+    />
+    <!--FIM GOOGLE FONTS-->
+    <!--BOOTSTRAP ICONS-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!--FIM BOOTSTRAP ICONS-->
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="menu.js" defer></script>
+
+    <title>Portfolio - Tiago</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="interface">
+        <div class="logo">
+          <a href="#inicio">
+            <img src="./images/logo.png" alt="Logo Portfolio Tiago" />
+          </a>
+        </div>
+        <!--logo-->
+        <nav class="menu-desktop">
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#especialidades">Especialidades</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+          </ul>
+        </nav>
+        <div class="btn-contato">
+          <a href="#formulario">
+            <button>Contato</button>
+          </a>
+        </div>
+        <!--btn-contato-->
+        <div class="btn-abrir-menu" id="btn-menu">
+          <i class="bi bi-list"></i>
+        </div>
+        <div class="menu-mobile" id="menu-mobile">
+          <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+          </div>
+          <nav>
+            <ul>
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Especialidades</a></li>
+              <li><a href="#">Sobre</a></li>
+              <li><a href="#">Projetos</a></li>
+              <li><a href="#">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!--menu-mobile-->
+        <div class="overlay-menu" id="overlay-menu"></div>
+      </div>
+      <!--interface-->
+    </header>
+
+    <main>
+      <section class="topo-do-site" id="inicio">
+        <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">
+              <h1>TRANSFORMANDO IDEIAS EM REALIDADE DIGITAIS<span>.</span></h1>
+              <p>
+                Olá! Sou Tiago, um entusiasta da programação com uma paixão
+                especial pelo desenvolvimento front-end e mobile. Ao longo dos
+                últimos 4 anos, tenho me dedicado intensamente ao estudo e
+                aprimoramento das tecnologias React e React Native, buscando
+                constantemente desafios que impulsionem meu crescimento
+                profissional.
+              </p>
+              <div class="btn-contato">
+                <a href="#formulario">
+                  <button>Entre em contato</button>
+                </a>
+              </div>
+            </div>
+            <div class="img-topo-site">
+              <img src="images/Tiago Portifolio 2.jpg" alt="Imagem Tiago" />
+            </div>
+          </div>
+        </div>
+        <!--interface-->
+      </section>
+      <!--topo do site-->
+
+      <section class="especialidades" id="especialidades">
+        <div class="interface">
+          <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
+          <div class="flex">
+            <div class="especialidades-box">
+              <i class="bi bi-code-square"></i>
+              <h3>Web</h3>
+              <p>
+                Sou um desenvolvedor web entusiasmado e dedicado, buscando
+                oportunidades para crescer e contribuir ativamente para projetos
+                desafiadores. Com uma base sólida em desenvolvimento front-end,
+                estou animado para colaborar em equipes dinâmicas, aprender
+                continuamente e aplicar minhas habilidades para criar
+                experiências online envolventes.
+              </p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi bi-phone"></i>
+              <h3>Mobile</h3>
+              <p>
+                Como desenvolvedor mobile apaixonado, estou comprometido em
+                transformar conceitos criativos em aplicações móveis funcionais
+                e envolventes. Minha experiência abrange tanto o desenvolvimento
+                para plataformas iOS quanto Android, garantindo que as soluções
+                que construo alcancem um público diversificado.
+              </p>
+            </div>
+            <!--especialidades-box-->
+
+            <div class="especialidades-box">
+              <i class="bi bi-database"></i>
+              <h3>Back-End</h3>
+              <p>
+                Como desenvolvedor back-end, estou empenhado em contribuir para
+                projetos desafiadores, aproveitando minha paixão por construir
+                sistemas robustos e eficientes. Com uma sólida base técnica,
+                estou pronto para aprender e colaborar em ambientes que
+                valorizem a inovação e o crescimento profissional.
+              </p>
+            </div>
+            <!--especialidades-box-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--especialidades-->
+
+      <section class="sobre" id="sobre">
+        <div class="interface">
+          <div class="flex">
+            <div class="img-sobre">
+              <img src="images/Tiago.jpg" alt="Foto Tiago" />
+            </div>
+            <!--img-sobre-->
+            <div class="txt-sobre">
+              <h2>MUITO PRAZER, <span>SOU TIAGO VIEIRA.</span></h2>
+              <p>
+                Olá, sou Tiago Vieira, um desenvolvedor full stack apaixonado
+                por tecnologia, casado e entusiasta de esportes. Com 38 anos de
+                idade, trago uma combinação única de habilidades técnicas e uma
+                energia contagiante para tudo que faço. Profissionalmente,
+                mergulho no mundo da programação e do desenvolvimento, atuando
+                como desenvolvedor full stack. Minha experiência abrange tanto o
+                front-end quanto o back-end, permitindo-me criar soluções
+                abrangentes e eficientes para uma variedade de desafios
+                tecnológicos.
+              </p>
+              <p>
+                Fora do mundo digital, minha vida é enriquecida pelo meu
+                casamento, que representa uma fonte constante de apoio e
+                alegria. Juntos, compartilhamos uma jornada repleta de momentos
+                significativos e desafios que moldam nossa parceria única. Além
+                disso, tenho uma paixão declarada por esportes. Seja
+                acompanhando jogos, praticando atividades físicas ou
+                simplesmente explorando novas modalidades, a energia do mundo
+                esportivo é uma parte vital da minha vida. Essa paixão não
+                apenas me mantém ativo, mas também inspira meu comprometimento
+                com valores como trabalho em equipe, disciplina e superação.
+                Estou sempre animado para conectar com pessoas que compartilham
+                interesses semelhantes ou que estejam interessadas em explorar
+                novas oportunidades na interseção entre tecnologia e esportes.
+                Se houver alguma maneira pela qual eu possa contribuir ou
+                colaborar, estou aberto a novas conexões e desafios. Vamos
+                explorar as possibilidades e criar juntos uma jornada
+                empolgante!
+              </p>
+              <div class="btn-social">
+                <a
+                  href="https://www.linkedin.com/in/tiagovieirapires/"
+                  target="_blank"
+                  ><button><i class="bi bi-linkedin"></i></button
+                ></a>
+                <a href="https://github.com/TiagoVP86" target="_blank"
+                  ><button><i class="bi bi-github"></i></button
+                ></a>
+                <a
+                  href="https://www.instagram.com/tiagovieira86/"
+                  target="_blank"
+                  ><button><i class="bi bi-instagram"></i></button
+                ></a>
+              </div>
+              <!--btn-social-->
+            </div>
+            <!--txt-sobre-->
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--sobre-->
+
+      <section class="portifolio" id="projetos">
+        <div class="interface">
+          <h2 class="titulo">MEU <span>PORTIFÓLIO.</span></h2>
+          <div class="flex">
+            <div
+              class="img-port"
+              style="background-image: url(images/front.png)"
+            >
+              <div class="overlay">Front End em React</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(images/mobile.png)"
+            >
+              <div class="overlay">Mobile em React Native</div>
+            </div>
+            <div
+              class="img-port"
+              style="background-image: url(images/back.png)"
+            >
+              <div class="overlay">Back End</div>
+            </div>
+          </div>
+          <!--flex-->
+        </div>
+        <!--interface-->
+      </section>
+      <!--portifolio-->
+
+      <section class="formulario" id="formulario">
+        <div class="interface">
+          <h2 class="titulo">FALA <span>COMIGO.</span></h2>
+
+          <form
+            method="POST"
+            action="https://formsubmit.co/tiago.vieirapires@gmail.com"
+          >
+            <input
+              type="hidden"
+              name="_next"
+              value="https://tiagovp86.github.io/portfolio/sucesso"
+            />
+            <input type="hidden" name="_captcha" value="false" />
+
+            <input
+              type="text"
+              name="nome"
+              id="nome"
+              placeholder="Seu nome completo"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Seu e-mail"
+              required
+            />
+
+            <input
+              type="tel"
+              name="telefone"
+              id="telefone"
+              placeholder="Seu celular"
+            />
+
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              placeholder="Sua mensagem"
+              required
+            ></textarea>
+
+            <div class="btn-enviar">
+              <input type="submit" value="ENVIAR" />
+            </div>
+          </form>
+        </div>
+        <!--interface-->
+      </section>
+      <!--formulario-->
+    </main>
+
+    <footer>
+      <div class="interface">
+        <div class="line-footer">
+          <div class="flex">
+            <div class="logo-footer">
+              <img src="./images/logo.png" alt="Logo Tiago" />
+            </div>
+            <div class="btn-social">
+              <a
+                href="https://www.linkedin.com/in/tiagovieirapires/"
+                target="_blank"
+                ><button><i class="bi bi-linkedin"></i></button
+              ></a>
+              <a href="https://github.com/TiagoVP86" target="_blank"
+                ><button><i class="bi bi-github"></i></button
+              ></a>
+              <a href="https://www.instagram.com/tiagovieira86/" target="_blank"
+                ><button><i class="bi bi-instagram"></i></button
+              ></a>
+            </div>
+            <!--btn-social-->
+          </div>
+        </div>
+        <!--line-footer-->
+
+        <div class="line-footer borda">
+          <p>
+            <i class="bi bi-envelope-fill"></i>
+            <a href="mailto:tiago.vieirapires@gmail.com"
+              >tiago.vieirapires@gmail.com
+            </a>
+          </p>
+        </div>
+        <!--line-footer-->
+      </div>
+      <!--interface-->
+    </footer>
+  </body>
+</html>
