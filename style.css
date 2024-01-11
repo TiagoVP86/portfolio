@@ -11,6 +11,10 @@ body {
   height: 100vh;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .interface {
   max-width: 1280px;
   margin: 0 auto;
@@ -152,7 +156,7 @@ header nav.menu-desktop ul li {
 
 /* ESTILO DO TOPO DO SITE */
 section.topo-do-site {
-  padding: 40px 4%;
+  padding: 40px 5%;
 }
 
 section.topo-do-site .flex {
@@ -389,13 +393,10 @@ footer .line-footer {
   border-top: 2px solid #04b4ae;
 }
 
-footer .line-footer p i {
-  color: #04b4ae;
-  font-size: 22px;
-}
-
 footer .line-footer p a {
   color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 /* ESTILO SUCESSO */
