@@ -114,3 +114,142 @@ img {
   border-color: var(--accent);
   color: var(--accent);
 }
+
+/* =============================================
+   HEADER
+   ============================================= */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 20px 0;
+  background: transparent;
+  transition: background 0.3s ease;
+}
+
+header.scrolled {
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: -1px;
+  color: var(--text);
+}
+
+.menu-desktop ul {
+  display: flex;
+  gap: 36px;
+}
+
+.menu-desktop a {
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: color 0.2s;
+}
+
+.menu-desktop a:hover {
+  color: var(--text);
+}
+
+.btn-contato-header {
+  background: var(--accent);
+  color: #000;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 8px 18px;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+
+.btn-contato-header:hover {
+  opacity: 0.85;
+}
+
+.btn-abrir-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.btn-abrir-menu i {
+  color: var(--accent);
+  font-size: 32px;
+}
+
+/* Mobile menu */
+.menu-mobile {
+  background: var(--bg);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 99999;
+  width: 0;
+  overflow: hidden;
+  transition: width 0.4s ease;
+  border-left: 1px solid var(--border);
+}
+
+.menu-mobile.abrir-menu {
+  width: 70%;
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.menu-mobile nav ul {
+  text-align: right;
+  padding-top: 20px;
+}
+
+.menu-mobile nav ul li a {
+  color: var(--text);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  padding: 16px 8%;
+  display: block;
+  transition: color 0.2s;
+}
+
+.menu-mobile nav ul li a:hover {
+  color: var(--accent);
+}
+
+.menu-mobile .btn-fechar {
+  padding: 20px 8%;
+  text-align: right;
+}
+
+.menu-mobile .btn-fechar i {
+  color: var(--accent);
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.overlay-menu {
+  background: rgba(0,0,0,0.85);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 88888;
+  display: none;
+}
