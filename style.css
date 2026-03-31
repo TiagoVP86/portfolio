@@ -766,6 +766,13 @@ a.count-link:hover .count-number {
   font-size: 13px;
   color: var(--accent);
   letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.tl-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.6;
   margin-bottom: 12px;
 }
 
