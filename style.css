@@ -710,3 +710,56 @@ footer {
 .footer-bottom a:hover {
   color: var(--text);
 }
+
+/* =============================================
+   RESPONSIVENESS
+   ============================================= */
+
+/* Tablet: 768px–1020px */
+@media screen and (max-width: 1020px) {
+  .menu-desktop,
+  .btn-contato-header {
+    display: none;
+  }
+
+  .btn-abrir-menu {
+    display: block;
+  }
+
+  .projetos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: < 768px */
+@media screen and (max-width: 768px) {
+  .hero-headline {
+    letter-spacing: -2px;
+  }
+
+  .bento-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .bento-stack {
+    grid-column: span 1;
+  }
+
+  .projetos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .timeline {
+    max-width: 100%;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
