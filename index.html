@@ -116,9 +116,13 @@
           <!-- Projeto destaque cell -->
           <div class="bento-cell bento-destaque fade-up">
             <p class="bento-label">PROJETO DESTAQUE</p>
-            <a href="https://github.com/TiagoVP86/pizzaria" target="_blank" class="destaque-link">
-              <img src="images/front.png" alt="Pizzaria App" class="destaque-img" />
-              <span class="destaque-name">Pizzaria Full Stack ↗</span>
+            <a href="https://github.com/TiagoVP86/dietaapp-mobile" target="_blank" class="destaque-link">
+              <div class="destaque-mock">
+                <span class="destaque-mock-label">✦ IA GENERATIVA</span>
+                <span class="destaque-mock-name">Dieta App</span>
+                <span class="destaque-mock-sub">React Native · Gemini AI · TypeScript</span>
+              </div>
+              <span class="destaque-name">Dieta App — Mobile + IA ↗</span>
             </a>
           </div>
 
@@ -148,108 +152,151 @@
         <h2 class="section-title">MEU <span>TRABALHO.</span></h2>
         <div class="projetos-grid">
 
+          <!-- DIETA APP MOBILE — destaque principal com IA -->
+          <div class="projeto-card projeto-featured fade-up">
+            <div class="projeto-badge">✦ IA GENERATIVA</div>
+            <a href="https://github.com/TiagoVP86/dietaapp-mobile" target="_blank">
+              <div class="projeto-img-placeholder projeto-img-placeholder--dieta">
+                <div class="proj-mock">
+                  <div class="proj-mock-bar"></div>
+                  <div class="proj-mock-title">🥗 Dieta<span>AI</span></div>
+                  <div class="proj-mock-sub">Powered by Gemini</div>
+                  <div class="proj-mock-pills">
+                    <span>Café da manhã</span><span>Almoço</span><span>Jantar</span>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <div class="projeto-body">
+              <h3 class="projeto-nome">Dieta App — Mobile</h3>
+              <p class="projeto-desc">App mobile de nutrição com IA: gera planos alimentares personalizados usando Google Gemini. Arquitetura completa com backend dedicado.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React Native</span>
+                <span class="chip hi">TypeScript</span>
+                <span class="chip hi">Gemini AI</span>
+                <span class="chip">Expo</span>
+              </div>
+              <div class="projeto-links">
+                <a href="https://github.com/TiagoVP86/dietaapp-mobile" target="_blank">GitHub ↗</a>
+                <a href="https://github.com/TiagoVP86/dietaapp-backend" target="_blank">Backend ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- PIZZARIA FULL STACK -->
+          <div class="projeto-card projeto-featured fade-up">
+            <div class="projeto-badge">✦ FULL STACK</div>
+            <a href="https://github.com/TiagoVP86/pizzaria" target="_blank">
+              <img src="images/front.png" alt="Pizzaria Full Stack" class="projeto-img" />
+            </a>
+            <div class="projeto-body">
+              <h3 class="projeto-nome">Pizzaria — Full Stack</h3>
+              <p class="projeto-desc">Sistema completo de gestão para restaurante: dashboard web, app mobile para garçons e API REST. Três repositórios, uma solução.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React</span>
+                <span class="chip hi">React Native</span>
+                <span class="chip hi">Node.js</span>
+                <span class="chip">PostgreSQL</span>
+                <span class="chip hi">TypeScript</span>
+              </div>
+              <div class="projeto-links">
+                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/frontend" target="_blank">Web ↗</a>
+                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/mobile" target="_blank">Mobile ↗</a>
+                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/backend" target="_blank">API ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- COTAÇÃO DE MOEDAS -->
+          <div class="projeto-card fade-up">
+            <a href="https://github.com/TiagoVP86/cotacao" target="_blank">
+              <div class="projeto-img-placeholder projeto-img-placeholder--cotacao">
+                <div class="proj-mock">
+                  <div class="proj-mock-bar"></div>
+                  <div class="proj-mock-title">💱 Cotação</div>
+                  <div class="proj-mock-rate">USD → <span>R$ 5,12</span></div>
+                  <div class="proj-mock-rate">EUR → <span>R$ 5,54</span></div>
+                </div>
+              </div>
+            </a>
+            <div class="projeto-body">
+              <h3 class="projeto-nome">Cotação de Moedas</h3>
+              <p class="projeto-desc">App mobile que consome API de câmbio em tempo real com conversão de múltiplas moedas.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React Native</span>
+                <span class="chip hi">TypeScript</span>
+                <span class="chip">Expo</span>
+                <span class="chip">REST API</span>
+              </div>
+              <div class="projeto-links">
+                <a href="https://github.com/TiagoVP86/cotacao" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- TAREFAS COM FIREBASE -->
+          <div class="projeto-card fade-up">
+            <a href="https://github.com/TiagoVP86/tarefas" target="_blank">
+              <div class="projeto-img-placeholder projeto-img-placeholder--tarefas">
+                <div class="proj-mock">
+                  <div class="proj-mock-bar"></div>
+                  <div class="proj-mock-title">✓ Tarefas</div>
+                  <div class="proj-mock-task proj-mock-task--done">Reunião de equipe</div>
+                  <div class="proj-mock-task">Revisar PR</div>
+                  <div class="proj-mock-task">Deploy produção</div>
+                </div>
+              </div>
+            </a>
+            <div class="projeto-body">
+              <h3 class="projeto-nome">Tarefas</h3>
+              <p class="projeto-desc">App de gerenciamento de tarefas com sincronização em tempo real via Firebase e suporte a iOS e Android.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React Native</span>
+                <span class="chip">Firebase</span>
+                <span class="chip">JavaScript</span>
+              </div>
+              <div class="projeto-links">
+                <a href="https://github.com/TiagoVP86/tarefas" target="_blank">GitHub ↗</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FOKUS -->
           <div class="projeto-card fade-up">
             <a href="https://fokus-brown-five.vercel.app/" target="_blank">
               <img src="images/fokus.png" alt="Fokus" class="projeto-img" />
             </a>
             <div class="projeto-body">
               <h3 class="projeto-nome">Fokus</h3>
-              <p class="projeto-desc">Timer Pomodoro com foco e produtividade</p>
+              <p class="projeto-desc">Timer Pomodoro com alternância de modos, sons ambiente e controle de foco.</p>
               <div class="projeto-chips">
                 <span class="chip">JavaScript</span>
                 <span class="chip">CSS</span>
+                <span class="chip">DOM API</span>
               </div>
               <div class="projeto-links">
                 <a href="https://fokus-brown-five.vercel.app/" target="_blank">Live ↗</a>
-                <a href="https://github.com/TiagoVP86" target="_blank">GitHub</a>
+                <a href="https://github.com/TiagoVP86/fokus" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
 
+          <!-- METEORA -->
           <div class="projeto-card fade-up">
             <a href="https://meteora-gray-three.vercel.app/" target="_blank">
               <img src="images/meteora.png" alt="Meteora" class="projeto-img" />
             </a>
             <div class="projeto-body">
               <h3 class="projeto-nome">Meteora</h3>
-              <p class="projeto-desc">E-commerce de moda com layout responsivo</p>
+              <p class="projeto-desc">E-commerce de moda com catálogo, filtros e layout totalmente responsivo.</p>
               <div class="projeto-chips">
                 <span class="chip">Bootstrap</span>
                 <span class="chip">HTML</span>
+                <span class="chip">CSS</span>
               </div>
               <div class="projeto-links">
                 <a href="https://meteora-gray-three.vercel.app/" target="_blank">Live ↗</a>
-                <a href="https://github.com/TiagoVP86" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="projeto-card fade-up">
-            <a href="https://serenatto-indol-rho.vercel.app/" target="_blank">
-              <img src="images/serenatto.png" alt="Serenatto" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Serenatto</h3>
-              <p class="projeto-desc">Landing page para cafeteria artesanal</p>
-              <div class="projeto-chips">
-                <span class="chip">Bootstrap</span>
-                <span class="chip">HTML</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://serenatto-indol-rho.vercel.app/" target="_blank">Live ↗</a>
-                <a href="https://github.com/TiagoVP86" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="projeto-card fade-up">
-            <a href="https://github.com/TiagoVP86/pizzaria/tree/main/frontend" target="_blank">
-              <img src="images/front.png" alt="Pizzaria Frontend" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Pizzaria — Frontend</h3>
-              <p class="projeto-desc">Dashboard web para gestão de pedidos</p>
-              <div class="projeto-chips">
-                <span class="chip hi">React</span>
-                <span class="chip hi">TypeScript</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/frontend" target="_blank">GitHub ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="projeto-card fade-up">
-            <a href="https://github.com/TiagoVP86/pizzaria/tree/main/mobile" target="_blank">
-              <img src="images/mobile.png" alt="Pizzaria Mobile" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Pizzaria — Mobile</h3>
-              <p class="projeto-desc">App para garçons registrarem pedidos em tempo real</p>
-              <div class="projeto-chips">
-                <span class="chip hi">React Native</span>
-                <span class="chip hi">TypeScript</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/mobile" target="_blank">GitHub ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="projeto-card fade-up">
-            <a href="https://github.com/TiagoVP86/pizzaria/tree/main/backend" target="_blank">
-              <img src="images/back.png" alt="Pizzaria Backend" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Pizzaria — Backend</h3>
-              <p class="projeto-desc">API REST para pedidos, mesas e produtos</p>
-              <div class="projeto-chips">
-                <span class="chip hi">Node.js</span>
-                <span class="chip">Express</span>
-                <span class="chip">PostgreSQL</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://github.com/TiagoVP86/pizzaria/tree/main/backend" target="_blank">GitHub ↗</a>
+                <a href="https://github.com/TiagoVP86/meteora" target="_blank">GitHub</a>
               </div>
             </div>
           </div>
