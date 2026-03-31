@@ -469,3 +469,81 @@ header.scrolled {
 a.count-link:hover .count-number {
   color: var(--accent);
 }
+
+/* =============================================
+   PROJETOS
+   ============================================= */
+.projetos {
+  background: var(--bg);
+  padding: 100px 0;
+}
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.projeto-card {
+  background: var(--bg-cell);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.projeto-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+
+.projeto-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.projeto-body {
+  padding: 20px;
+}
+
+.projeto-nome {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+.projeto-desc {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.projeto-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.projeto-links {
+  display: flex;
+  gap: 16px;
+}
+
+.projeto-links a {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+}
+
+.projeto-links a:hover {
+  opacity: 0.7;
+}
