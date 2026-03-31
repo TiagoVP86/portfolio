@@ -79,6 +79,11 @@ img {
   transform: translateY(0);
 }
 
+/* Offset for fixed header when navigating via anchor links */
+section {
+  scroll-margin-top: 80px;
+}
+
 /* =============================================
    SECTION TITLES
    ============================================= */
@@ -898,7 +903,9 @@ footer {
 /* Mobile: < 768px */
 @media screen and (max-width: 768px) {
   .hero-headline {
-    letter-spacing: -2px;
+    font-size: clamp(36px, 11vw, 52px);
+    letter-spacing: -1px;
+    line-height: 1;
   }
 
   .bento-grid {
