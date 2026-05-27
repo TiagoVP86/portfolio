@@ -170,6 +170,22 @@ header.scrolled {
   color: var(--text);
 }
 
+.btn-cv-header {
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 7px 14px;
+  border-radius: 2px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-cv-header:hover {
+  background: var(--accent);
+  color: #000;
+}
+
 .btn-contato-header {
   background: var(--accent);
   color: #000;
@@ -373,34 +389,50 @@ header.scrolled {
 }
 
 /* Sobre cell */
-.sobre-inner {
+.sobre-text {
   display: flex;
-  gap: 16px;
-  align-items: flex-start;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.sobre-photo {
-  width: 72px;
-  height: 90px;
-  object-fit: cover;
-  border-radius: 3px;
-  flex-shrink: 0;
-  border: 1px solid var(--border);
-}
-
-.sobre-text strong {
+.sobre-nome {
   display: block;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 700;
   color: var(--text);
-  margin-bottom: 6px;
 }
 
-.sobre-text p {
+.sobre-bio {
   font-size: 13px;
   color: var(--muted);
-  line-height: 1.5;
-  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.sobre-stats {
+  display: flex;
+  gap: 20px;
+  padding: 12px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.sobre-stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.sobre-stat-num {
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--accent);
+  line-height: 1.1;
+}
+
+.sobre-stat-label {
+  font-size: 10px;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 /* Social icons — used in bento sobre and footer */
@@ -485,8 +517,8 @@ a.count-link:hover .count-number {
 
 .projetos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
 }
 
 .projeto-card {
@@ -504,7 +536,7 @@ a.count-link:hover .count-number {
 
 .projeto-img {
   width: 100%;
-  height: 200px;
+  height: 240px;
   object-fit: cover;
   display: block;
   border-bottom: 1px solid var(--border);
@@ -553,6 +585,14 @@ a.count-link:hover .count-number {
   opacity: 0.7;
 }
 
+.proj-private {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 /* Featured card — borda accent permanente */
 .projeto-featured {
   border-color: var(--accent);
@@ -577,7 +617,7 @@ a.count-link:hover .count-number {
 /* Mockup inline — substitui screenshot quando não há imagem */
 .projeto-img-placeholder {
   width: 100%;
-  height: 200px;
+  height: 240px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -598,6 +638,35 @@ a.count-link:hover .count-number {
   background: linear-gradient(135deg, #1a0d0d 0%, #1f0a0a 100%);
 }
 
+/* Mobile screenshot display */
+.projeto-img-mobile {
+  width: 100%;
+  height: 240px;
+  background: linear-gradient(135deg, #07312e 0%, #0a4a44 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.projeto-img-mobile__shot {
+  height: 222px;
+  width: auto;
+  border-radius: 12px;
+  border: 2px solid rgba(255,255,255,0.1);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+  display: block;
+}
+
+.projeto-img-placeholder--condo {
+  background: linear-gradient(135deg, #0d1520 0%, #0a1530 100%);
+}
+
+.projeto-img-placeholder--admin {
+  background: linear-gradient(135deg, #1a1020 0%, #180a2a 100%);
+}
+
 .proj-mock {
   width: 140px;
   background: #111;
@@ -605,6 +674,10 @@ a.count-link:hover .count-number {
   border-radius: 12px;
   padding: 12px;
   text-align: left;
+}
+
+.proj-mock--wide {
+  width: 160px;
 }
 
 .proj-mock-bar {
@@ -765,6 +838,20 @@ a.count-link:hover .count-number {
   font-size: 12px;
   color: var(--muted);
   font-weight: 400;
+}
+
+.tl-confidencial {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--muted);
+  border: 1px solid var(--border);
+  border-radius: 3px;
+  padding: 1px 6px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  margin-left: 8px;
 }
 
 .tl-period {

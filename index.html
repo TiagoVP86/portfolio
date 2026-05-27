@@ -31,11 +31,12 @@
         <nav class="menu-desktop">
           <ul>
             <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#sobre">Stack</a></li>
+            <li><a href="#stack">Stack</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#experiencia">Experiência</a></li>
           </ul>
         </nav>
+        <a href="Tiago_Vieira_Pires_Curriculo.pdf" download class="btn-cv-header">↓ CV</a>
         <a href="#formulario" class="btn-contato-header">CONTATO</a>
         <div class="btn-abrir-menu" id="btn-menu">
           <i class="bi bi-list"></i>
@@ -77,41 +78,56 @@
     </section>
 
     <!-- BENTO GRID (Sobre + Stack) -->
-    <section class="bento" id="sobre">
+    <section class="bento" id="bento">
       <div class="container">
         <div class="bento-grid">
 
           <!-- Stack cell — full width -->
-          <div class="bento-cell bento-stack fade-up">
+          <div class="bento-cell bento-stack fade-up" id="stack">
             <p class="bento-label">STACK</p>
             <div class="chips-row">
               <span class="chip hi">React</span>
+              <span class="chip hi">Next.js</span>
               <span class="chip hi">React Native</span>
               <span class="chip hi">TypeScript</span>
-              <span class="chip hi">Node.js</span>
               <span class="chip hi">Expo</span>
+              <span class="chip hi">Redux Toolkit</span>
+              <span class="chip hi">Zustand</span>
+              <span class="chip hi">TanStack Query</span>
+              <span class="chip hi">Tailwind CSS</span>
+              <span class="chip hi">Material UI</span>
+              <span class="chip hi">Framer Motion</span>
+              <span class="chip hi">React Hook Form</span>
+              <span class="chip hi">Zod</span>
               <span class="chip hi">Gemini AI</span>
+              <span class="chip">Node.js</span>
               <span class="chip">Express</span>
+              <span class="chip">Prisma ORM</span>
               <span class="chip">PostgreSQL</span>
+              <span class="chip">Supabase</span>
               <span class="chip">Firebase</span>
+              <span class="chip">Stripe</span>
               <span class="chip">REST APIs</span>
               <span class="chip">Git</span>
+              <span class="chip">Jest</span>
             </div>
           </div>
 
           <!-- Sobre cell -->
-          <div class="bento-cell bento-sobre fade-up">
+          <div class="bento-cell bento-sobre fade-up" id="sobre">
             <p class="bento-label">SOBRE</p>
-            <div class="sobre-inner">
-              <img src="images/Tiago.jpg" alt="Tiago Vieira" class="sobre-photo" />
-              <div class="sobre-text">
-                <strong>Tiago Vieira</strong>
-                <p>+5 anos entregando produtos com React, React Native e Node.js — do banco de dados ao app nas lojas.</p>
-                <div class="social-icons">
-                  <a href="https://www.linkedin.com/in/tiagovieirapires/" target="_blank"><i class="bi bi-linkedin"></i></a>
-                  <a href="https://github.com/TiagoVP86" target="_blank"><i class="bi bi-github"></i></a>
-                  <a href="https://www.instagram.com/tiagovieira86/" target="_blank"><i class="bi bi-instagram"></i></a>
-                </div>
+            <div class="sobre-text">
+              <strong class="sobre-nome">Tiago Vieira</strong>
+              <p class="sobre-bio">Desenvolvedor Full Stack & Mobile com +4 anos entregando produtos reais — do banco de dados ao app publicado nas lojas. Especialista em React, Next.js, React Native e TypeScript.</p>
+              <div class="sobre-stats">
+                <div class="sobre-stat"><span class="sobre-stat-num">+4</span><span class="sobre-stat-label">anos de exp.</span></div>
+                <div class="sobre-stat"><span class="sobre-stat-num">10+</span><span class="sobre-stat-label">apps entregues</span></div>
+                <div class="sobre-stat"><span class="sobre-stat-num">2</span><span class="sobre-stat-label">plataformas SaaS</span></div>
+              </div>
+              <div class="social-icons">
+                <a href="https://www.linkedin.com/in/tiagovieirapires/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/TiagoVP86" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://www.instagram.com/tiagovieira86/" target="_blank"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -119,13 +135,13 @@
           <!-- Projeto destaque cell -->
           <div class="bento-cell bento-destaque fade-up">
             <p class="bento-label">PROJETO DESTAQUE</p>
-            <a href="https://github.com/TiagoVP86/dietaapp-mobile" target="_blank" class="destaque-link">
+            <a href="#projetos" class="destaque-link">
               <div class="destaque-mock">
-                <span class="destaque-mock-label">✦ IA GENERATIVA</span>
-                <span class="destaque-mock-name">Dieta App</span>
-                <span class="destaque-mock-sub">React Native · Gemini AI · TypeScript</span>
+                <span class="destaque-mock-label">✦ PROPTECH</span>
+                <span class="destaque-mock-name">CondoFácil</span>
+                <span class="destaque-mock-sub">React Native · Next.js · Supabase · TypeScript</span>
               </div>
-              <span class="destaque-name">Dieta App — Mobile + IA ↗</span>
+              <span class="destaque-name">CondoFácil — App + Web ↓</span>
             </a>
           </div>
 
@@ -133,7 +149,7 @@
           <div class="bento-cell bento-count fade-up">
             <p class="bento-label">PROJETOS</p>
             <a href="#projetos" class="count-link">
-              <span class="count-number">6</span>
+              <span class="count-number">4</span>
               <span class="count-arrow">→</span>
             </a>
           </div>
@@ -141,7 +157,7 @@
           <div class="bento-cell bento-count fade-up">
             <p class="bento-label">ANOS DE EXPERIÊNCIA</p>
             <div class="count-link">
-              <span class="count-number">+5</span>
+              <span class="count-number">+4</span>
             </div>
           </div>
 
@@ -155,7 +171,49 @@
         <h2 class="section-title">MEU <span>TRABALHO.</span></h2>
         <div class="projetos-grid">
 
-          <!-- DIETA APP MOBILE — destaque principal com IA -->
+          <!-- CONDOFÁCIL APP + WEB — destaque principal -->
+          <div class="projeto-card projeto-featured fade-up">
+            <div class="projeto-badge">✦ PROPTECH</div>
+            <div class="projeto-img-mobile">
+              <img src="images/condofacil-mobile-dashboard.jpeg" alt="CondoFácil App Mobile" class="projeto-img-mobile__shot" />
+            </div>
+            <div class="projeto-body">
+              <h3 class="projeto-nome">CondoFácil — App + Web</h3>
+              <p class="projeto-desc">Plataforma completa de gestão de condomínios: app mobile (iOS & Android) para moradores e síndicos + portal web. Autenticação, financeiro, comunicados e controle de acesso.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React Native</span>
+                <span class="chip hi">Next.js</span>
+                <span class="chip hi">TypeScript</span>
+                <span class="chip hi">Supabase</span>
+                <span class="chip">Expo</span>
+              </div>
+              <div class="projeto-links">
+                <span class="proj-private">🔒 Repositório privado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- CONDOFÁCIL ADMIN PANEL -->
+          <div class="projeto-card projeto-featured fade-up">
+            <div class="projeto-badge">✦ DASHBOARD</div>
+            <img src="images/dashboard-condofacil.png" alt="CondoFácil Admin Panel — Dashboard" class="projeto-img" style="object-position: top;" />
+            <div class="projeto-body">
+              <h3 class="projeto-nome">CondoFácil — Admin Panel</h3>
+              <p class="projeto-desc">Painel administrativo SPA com dashboards analíticos em tempo real, gestão de usuários e relatórios financeiros. Integração com múltiplas libs de gráficos.</p>
+              <div class="projeto-chips">
+                <span class="chip hi">React</span>
+                <span class="chip hi">TypeScript</span>
+                <span class="chip hi">Material UI</span>
+                <span class="chip">Redux Toolkit</span>
+                <span class="chip">Tailwind CSS</span>
+              </div>
+              <div class="projeto-links">
+                <span class="proj-private">🔒 Repositório privado</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- DIETA APP MOBILE -->
           <div class="projeto-card projeto-featured fade-up">
             <div class="projeto-badge">✦ IA GENERATIVA</div>
             <a href="https://github.com/TiagoVP86/dietaapp-mobile" target="_blank">
@@ -210,100 +268,6 @@
             </div>
           </div>
 
-          <!-- COTAÇÃO DE MOEDAS -->
-          <div class="projeto-card fade-up">
-            <a href="https://github.com/TiagoVP86/cotacao" target="_blank">
-              <div class="projeto-img-placeholder projeto-img-placeholder--cotacao">
-                <div class="proj-mock">
-                  <div class="proj-mock-bar"></div>
-                  <div class="proj-mock-title">💱 Cotação</div>
-                  <div class="proj-mock-rate">USD → <span>R$ 5,12</span></div>
-                  <div class="proj-mock-rate">EUR → <span>R$ 5,54</span></div>
-                </div>
-              </div>
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Cotação de Moedas</h3>
-              <p class="projeto-desc">App mobile que consome API de câmbio em tempo real com conversão de múltiplas moedas.</p>
-              <div class="projeto-chips">
-                <span class="chip hi">React Native</span>
-                <span class="chip hi">TypeScript</span>
-                <span class="chip">Expo</span>
-                <span class="chip">REST API</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://github.com/TiagoVP86/cotacao" target="_blank">GitHub ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- TAREFAS COM FIREBASE -->
-          <div class="projeto-card fade-up">
-            <a href="https://github.com/TiagoVP86/tarefas" target="_blank">
-              <div class="projeto-img-placeholder projeto-img-placeholder--tarefas">
-                <div class="proj-mock">
-                  <div class="proj-mock-bar"></div>
-                  <div class="proj-mock-title">✓ Tarefas</div>
-                  <div class="proj-mock-task proj-mock-task--done">Reunião de equipe</div>
-                  <div class="proj-mock-task">Revisar PR</div>
-                  <div class="proj-mock-task">Deploy produção</div>
-                </div>
-              </div>
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Tarefas</h3>
-              <p class="projeto-desc">App de gerenciamento de tarefas com sincronização em tempo real via Firebase e suporte a iOS e Android.</p>
-              <div class="projeto-chips">
-                <span class="chip hi">React Native</span>
-                <span class="chip">Firebase</span>
-                <span class="chip">JavaScript</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://github.com/TiagoVP86/tarefas" target="_blank">GitHub ↗</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- FOKUS -->
-          <div class="projeto-card fade-up">
-            <a href="https://fokus-brown-five.vercel.app/" target="_blank">
-              <img src="images/fokus.png" alt="Fokus" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Fokus</h3>
-              <p class="projeto-desc">Timer Pomodoro com alternância de modos, sons ambiente e controle de foco.</p>
-              <div class="projeto-chips">
-                <span class="chip">JavaScript</span>
-                <span class="chip">CSS</span>
-                <span class="chip">DOM API</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://fokus-brown-five.vercel.app/" target="_blank">Live ↗</a>
-                <a href="https://github.com/TiagoVP86/fokus" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-
-          <!-- METEORA -->
-          <div class="projeto-card fade-up">
-            <a href="https://meteora-gray-three.vercel.app/" target="_blank">
-              <img src="images/meteora.png" alt="Meteora" class="projeto-img" />
-            </a>
-            <div class="projeto-body">
-              <h3 class="projeto-nome">Meteora</h3>
-              <p class="projeto-desc">E-commerce de moda com catálogo, filtros e layout totalmente responsivo.</p>
-              <div class="projeto-chips">
-                <span class="chip">Bootstrap</span>
-                <span class="chip">HTML</span>
-                <span class="chip">CSS</span>
-              </div>
-              <div class="projeto-links">
-                <a href="https://meteora-gray-three.vercel.app/" target="_blank">Live ↗</a>
-                <a href="https://github.com/TiagoVP86/meteora" target="_blank">GitHub</a>
-              </div>
-            </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -317,17 +281,17 @@
           <div class="timeline-item fade-up">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
-              <h3 class="tl-company">Freelancer</h3>
-              <p class="tl-period">2022 – presente · Dev Full Stack & Mobile</p>
-              <p class="tl-desc">Projetos próprios e para clientes: apps mobile com React Native, sistemas web com React e APIs REST em Node.js. Integração com IA (Google Gemini) e serviços cloud.</p>
+              <h3 class="tl-company">Startup LegalTech <span class="tl-confidencial">Confidencial</span></h3>
+              <p class="tl-period">2022 – Atual · Desenvolvedor Full Stack & Mobile</p>
+              <p class="tl-desc">Plataforma jurídica SaaS com dois apps mobile (iOS & Android) e dois portais web para clientes e advogados. Autenticação multi-método, pagamentos, agenda, dashboards analíticos e integração com IA.</p>
               <div class="tl-chips">
-                <span class="chip hi">React</span>
                 <span class="chip hi">React Native</span>
-                <span class="chip hi">Node.js</span>
+                <span class="chip hi">Next.js</span>
                 <span class="chip hi">TypeScript</span>
-                <span class="chip">Gemini AI</span>
-                <span class="chip">Firebase</span>
-                <span class="chip">PostgreSQL</span>
+                <span class="chip hi">Firebase</span>
+                <span class="chip">Stripe</span>
+                <span class="chip">Material UI</span>
+                <span class="chip">Redux Toolkit</span>
               </div>
             </div>
           </div>
@@ -336,7 +300,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <h3 class="tl-company">Capgemini</h3>
-              <p class="tl-period">Jan 2021 – Jan 2022 · Desenvolvedor Frontend & Mobile</p>
+              <p class="tl-period">2022 – 2023 · Desenvolvedor Mobile Junior</p>
               <p class="tl-desc">Atuei em duas squads: desenvolvimento de interfaces web responsivas e aplicações mobile Android. Metodologias ágeis, entrega contínua e colaboração em time multidisciplinar.</p>
               <div class="tl-chips">
                 <span class="chip hi">React Native</span>
@@ -370,7 +334,7 @@
     <section class="formulario" id="formulario">
       <div class="container">
         <h2 class="section-title">FALE <span>COMIGO.</span></h2>
-        <form method="POST" action="https://formsubmit.co/devtiagovieira@gmail.com">
+        <form method="POST" action="https://formsubmit.co/t.vp@hotmail.com">
           <input type="hidden" name="_next" value="https://tiagovp86.github.io/portfolio/sucesso" />
           <input type="hidden" name="_captcha" value="false" />
           <input type="text" name="nome" placeholder="Seu nome completo" required />
@@ -396,7 +360,7 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <a href="mailto:devtiagovieira@gmail.com">devtiagovieira@gmail.com</a>
+        <a href="mailto:t.vp@hotmail.com">t.vp@hotmail.com</a>
       </div>
     </div>
   </footer>
